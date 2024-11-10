@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #081b29;
+  color: #ededed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #031f33;
+  position: fixed;
+  padding: 20px 10%;
+  z-index: 1;
+  width: 100%;
+
+}
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  font-weight: 600;
+}
+
+.lists a{
+  color: #ededed;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+.lists a:hover {
+  color: #00abf0;
+}
+
+/* ================ Hero section =============== */
+.home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  background-image: url(/profile.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.profile-pic{
+
+  position: absolute;
+  right: 30px;
+  width: 500px;
+  height: 100%;
+  top: 0;
+  background: #081b29;
+  opacity: 0.7;
+}
+
+.home-content {
+  max-width: 600px;
+}
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+.home-content p {
+  font-size: 16px;
+  padding: 20px 0 40px;
+}
+ 
+/* ============= hero button =============== */
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+
+}
+.btn-box a  {
+  font-weight: 600;
+  font-size: 19px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00abf0;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.hire-btn {
+  background: #00abf0;
+}
+ .talk-btn {
+  color: #00abf0;
+ }
+ .hire-btn:hover {
+  background: transparent;
+  transition: 1s;
+ }
+ .talk-btn:hover{
+  background-color: #00abf0;
+  color: #ededed;
+  transition: 1s;
+ }
+
+ /*  =============== About me ================ */
+ .about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  height: 100vh;
+ }
+.heading{
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 20px auto;
+}
+.heading h3 span{
+  color: #00abf0;
+}
+.img-container img{
+  border-radius: 50%;
+  border: #00abf0 2px solid;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+.content h3 {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 10px;
+}
+.content p {
+  margin: 30px auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+ .lrn-btn {
+  font-weight: 600;
+  font-size: 19px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00abf0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+ }
+.lrn-btn:hover {
+  background-color: #00abf0;
+  transition: 1s ease;
+}
+
+/* ================= Skills ================ */
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.card { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 60vh;
+  border: #00abf0 1px solid;
+  border-radius: 8px;
+  padding: 90px 10px;
+}
+.loader-bar {
+  width: 90%;
+  text-align: center;
+  background-color: transparent;
+  border: solid 1px #00abf0;
+  border-radius: 8px;
+  height: 60px;
+  overflow: hidden;
+  
+}
+
+.progress {
+  height: 100%;
+  background-color: #00abf0;
+  transition: width 1s;
+}
+
+/* ====================== Contact ================ */
+input , .message {
+border: 1px solid #00abf0;
+border-radius: 5px;
+display: inline;
+background-color: transparent;
+padding: 8px 8px;
+margin: 5px;
+}
+.message {
+  width: 410px;
+}
+
+ .submit {
+  font-weight: 600;
+  font-size: 19px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00abf0;
+  color: #ededed;
+  border: #00abf0 1px solid;
+  padding: 10px 15px;
+  border-radius: 8px;
+ }
+ .submit:hover {
+  background-color: transparent;
+  transition: 1s ease;
+ }
+
+ /* =============== Mobile ====================== */
+
+ @media only screen and (max-width:600px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+ }
